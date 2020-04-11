@@ -1,6 +1,5 @@
 import os
 import glob
-import _pickle as cPickle
 import cv2
 import dlib
 import numpy as np
