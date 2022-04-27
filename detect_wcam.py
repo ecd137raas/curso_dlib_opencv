@@ -1,6 +1,4 @@
-import sys
 import cv2
-import dlib
 
 video = cv2.VideoCapture(0)
 video.set(3, 640) #largura
@@ -14,7 +12,7 @@ while True:
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.2, 5)
-    #print(len(faces))
+    print(len(faces))
 
     for(x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)

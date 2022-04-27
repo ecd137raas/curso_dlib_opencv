@@ -1,12 +1,12 @@
 import cv2
 import dlib
 
-imagem = cv2.imread("fotos/grupo.0.jpg")
+imagem = cv2.imread('fotos/grupo.10.jpg')
 
 detector = dlib.get_frontal_face_detector()
 facesDetectadas = detector(imagem, 2)
 print(facesDetectadas)
-print("Faces detectadas: ", len(facesDetectadas))
+print('Faces detectadas: ', len(facesDetectadas))
 for face in facesDetectadas:
     #print(face)
     #print(face.left())
